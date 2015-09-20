@@ -1,19 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- * Description of About
- *
- * @author Terrence
- */
-class About extends CI_Controller {
-    	public function index()
+class About extends Application {
+
+	/**
+	 * Index Page for this controller.
+	 */
+	public function index()
 	{
-		$this->load->view('about');
+            //$this->load->view('about');
+            $this->data['pagebody'] = 'about';
+            $this->render();
 	}
 }
